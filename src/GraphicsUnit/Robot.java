@@ -11,10 +11,25 @@ package GraphicsUnit;
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Canvas;
+import javax.swing.JFrame;
 
 class Robot extends Canvas
 {
-   public Robot()    //constructor method - sets up the class
+   
+    public static void main(String[] args) {
+              
+        // TODO code application logic here
+        
+        JFrame myframe = new JFrame("Title: Robot");
+        Canvas canvas = new Robot();       
+        
+        myframe.add(canvas);
+        myframe.pack();
+        
+        myframe.setVisible(true);               
+    }
+    
+    public Robot()    //constructor method - sets up the class
    {
       setSize(800,600);
       setBackground(Color.WHITE);   	

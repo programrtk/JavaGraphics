@@ -16,9 +16,24 @@ import java.awt.Canvas;
 import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JFrame;
 
 public class ShapePanel extends JPanel
 {
+        public static void main(String[] args) {
+              
+        // TODO code application logic here
+        
+        JFrame myframe = new JFrame("Title: ");
+        JPanel jpan = new ShapePanel();       
+        
+        myframe.add(jpan);
+        myframe.pack();
+        
+        myframe.setVisible(true);               
+    }
+    
+    
 	public ShapePanel()
 	{
 		setBackground(Color.WHITE);

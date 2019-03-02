@@ -11,9 +11,31 @@ package GraphicsUnit;
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Canvas;
+import javax.swing.JFrame;
 
 public class BigHouse extends Canvas
 {
+    
+        public static void main(String[] args) {
+              
+        // TODO code application logic here
+        
+        JFrame myframe = new JFrame("Title: Big House");
+        Canvas canvas = new BigHouse();       
+        
+        myframe.add(canvas);
+        myframe.pack();
+        
+        myframe.setVisible(true);               
+    }
+        JFrame myframe = new JFrame("Title: Big House");
+        Canvas canvas = new BigHouse();       
+        
+        myframe.add(canvas);
+        myframe.pack();
+        
+        myframe.setVisible(true); 
+        
    public BigHouse()  //constructor - sets up the class
    {
       setSize(800,600);
