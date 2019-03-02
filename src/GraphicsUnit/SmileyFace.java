@@ -11,6 +11,9 @@ package GraphicsUnit;
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Canvas;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 public class SmileyFace extends Canvas
 {
