@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GraphicsUnit;
+
 
 /**
  *
@@ -12,7 +12,6 @@ package GraphicsUnit;
 
 import java.awt.Color;
 import java.awt.Graphics;
-
 import java.awt.Canvas;
 import java.awt.*;
 import java.awt.event.*;
@@ -26,7 +25,7 @@ public class MyShape extends Canvas
         // TODO code application logic here
         
         JFrame myframe = new JFrame("Title: MyShape");
-        Canvas canvas = new SmileyFace();       
+        Canvas canvas = new MyShape();       
         
         myframe.add(canvas);
         myframe.pack();
@@ -43,8 +42,16 @@ public class MyShape extends Canvas
 
    public void paint( Graphics window )
    {
-      Shape shape_1 = new Shape(100, 100, 100, 100); 
+      Shape shape_1 = new Shape(100, 100, 100, 100, Color.BLACK); 
+      Shape shape_2 = new Shape(400, 200, 230, 120, Color.BLUE);
+      Shape shape_3 = new Shape(100, 300, 60, 120, Color.RED);
+      Shape shape_4 = new Shape(240, 400, 80, 120, Color.ORANGE);
+      
       shape_1.draw(window);
+      shape_2.draw(window);
+      shape_3.draw(window);
+      shape_4.draw(window);
+      
    }
 
 }
